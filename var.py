@@ -1,7 +1,9 @@
+from pyglet.window import key
+
 import pyglet
+
 import directories
 import assets
-from pyglet.window import key
 
 # Window
 caption = "Colors"

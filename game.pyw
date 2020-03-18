@@ -1,10 +1,12 @@
-import pyglet
 from pyglet.gl import *
 import directories as d
 from var import window
-import var
-import tinyMonitor
+
+import pyglet
+
 import states
+import var
+
 
 @window.event
 def on_draw():

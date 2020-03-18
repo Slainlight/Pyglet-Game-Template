@@ -1,6 +1,5 @@
 from pyglet import image
-import os
-import sys
+import os, sys
 
 base = os.getcwd() + "/Assets/"
 

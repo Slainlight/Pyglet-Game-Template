@@ -1,10 +1,11 @@
-import pyglet
+from pyglet.window import key
 from pyglet.gl import *
 import parent
-import directories
-import assets
+import pyglet
 
 from var import window
+import directories
+import assets
 import var
 
 # Rainbow test
@@ -29,11 +30,19 @@ def aaoff():
 def graphics():
     quad.draw(pyglet.gl.GL_QUADS)
     aaoff()
-    mario.draw()
-    aaoff()
     luigi.draw()
+    aaoff()
+    mario.draw()
     pass
 
 def update(dt):
+    if var.keys[key.RIGHT]:
+        mario.x+= 200*dt
+    if var.keys[key.LEFT]:
+        mario.x+= 200*-dt
+    if var.keys[key.UP]:
+        mario.y+= 200*dt
+    if var.keys[key.DOWN]:
+        mario.y-= 200*dt
     pass
     

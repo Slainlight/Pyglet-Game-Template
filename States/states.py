@@ -1,9 +1,14 @@
+# External dependencies
 from pyglet.window import key
 import fullscreen as fs
-import statetest
-import state1
+
+# Internal dependencies
 import parent
 import var
+
+# States
+import statetest
+import state1
 
 def graphics():
     if var.state == 0:
